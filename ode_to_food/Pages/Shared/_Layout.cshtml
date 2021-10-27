@@ -37,10 +37,12 @@
             @RenderBody()
         </main>
     </div>
-
+    
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - ode_to_food - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <vc:restaurant-count></vc:restaurant-count>
+            @RenderSection("footer", required: false)
+            &copy; 2021 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
